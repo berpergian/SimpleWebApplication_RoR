@@ -34,6 +34,9 @@ gem 'grape'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
 
+# A ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard.
+gem 'jwt'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 

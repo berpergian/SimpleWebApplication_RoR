@@ -2,6 +2,15 @@ Rails.application.routes.draw do
   # Root
   root to: "homepage#index"
 
+  # API Site
+  constraints subdomain: 'api' do
+    mount Twitter::Root => '/'
+
+    unless Rails.env.production?
+      mount GrapeSwaggerRails::Engine => '/:version/docs'
+    end
+  end
+
   # Users Site
   devise_for :users
   namespace :users do

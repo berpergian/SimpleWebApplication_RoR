@@ -269,6 +269,7 @@ DEPENDENCIES
   grape-swagger
   grape-swagger-rails
   jbuilder (~> 2.7)
+  jwt
   listen (~> 3.3)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
